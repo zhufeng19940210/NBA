@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  ZFNavigationController.h
 //  ZF_NBA
 //
 //  Created by bailing on 2017/12/4.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface ZFNavigationController : UINavigationController
 
 @end
-

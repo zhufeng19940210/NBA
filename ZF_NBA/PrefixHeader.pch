@@ -1,0 +1,29 @@
+//
+//  PrefixHeader.pch
+//  ZF_NBA
+//
+//  Created by bailing on 2017/12/4.
+//  Copyright © 2017年 zhufeng. All rights reserved.
+//
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+/******** 关于颜色的宏********/
+// 带透明度的颜色
+#define  ZF_NAVBAR_BG  [UIColor colorWithRed:(76/255.0f) green:(199/255.0f) blue:(145/255.0f) alpha:1.0 ]
+#define  ZF_HOME_NORMAL_BG [UIColor colorWithRed:(83/255.0f) green:(83/255.0f) blue:(83/255.0f) alpha:1.0]
+#define ZFColorA(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]
+// 不带透明度的颜色
+#define ZFColor(r,g,b) CLColorA(r,g,b,1);
+// 随机颜色
+#define ZFRandomColor CLColor(arc4random_uniform(255),arc4random_uniform(255),arc4random_uniform(255))
+// 灰色
+#define ZFCommonColor(v) ZFColor(v,v,v)
+/********关于版本的宏********/
+#define iOS(version) [UIDevice currentDevice].systemVersion.doubleValue >= (version)
+/********屏幕的宽,高********/
+//屏幕框
+#define ZFScreenW   [[UIScreen mainScreen] bounds].size.width
+//屏幕高
+#define ZFScreenH   [[UIScreen mainScreen] bounds].size.height
+
+#endif /* PrefixHeader_pch */

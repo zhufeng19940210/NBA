@@ -9,11 +9,23 @@
 /* Begin PBXBuildFile section */
 		50EC09AE52FF8A87BC725D50 /* libPods-ZF_NBA.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E56318759BB532D543513BCD /* libPods-ZF_NBA.a */; };
 		BFD6C9BB1FD5C5CF0056CC20 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD6C9BA1FD5C5CF0056CC20 /* AppDelegate.m */; };
-		BFD6C9BE1FD5C5CF0056CC20 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD6C9BD1FD5C5CF0056CC20 /* ViewController.m */; };
 		BFD6C9C11FD5C5CF0056CC20 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFD6C9BF1FD5C5CF0056CC20 /* Main.storyboard */; };
 		BFD6C9C31FD5C5CF0056CC20 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFD6C9C21FD5C5CF0056CC20 /* Assets.xcassets */; };
 		BFD6C9C61FD5C5CF0056CC20 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFD6C9C41FD5C5CF0056CC20 /* LaunchScreen.storyboard */; };
 		BFD6C9C91FD5C5CF0056CC20 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD6C9C81FD5C5CF0056CC20 /* main.m */; };
+		BFD6C9E11FD5CC960056CC20 /* ZFTabBarControllerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD6C9E01FD5CC960056CC20 /* ZFTabBarControllerViewController.m */; };
+		BFD6C9E41FD5CCAC0056CC20 /* ZFNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD6C9E31FD5CCAC0056CC20 /* ZFNavigationController.m */; };
+		BFD6C9ED1FD5CD1B0056CC20 /* ZFNbaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD6C9EB1FD5CD1B0056CC20 /* ZFNbaViewController.m */; };
+		BFD6C9EE1FD5CD1B0056CC20 /* ZFNbaViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFD6C9EC1FD5CD1B0056CC20 /* ZFNbaViewController.xib */; };
+		BFD6C9F21FD5CD6E0056CC20 /* ZFFootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD6C9F01FD5CD6E0056CC20 /* ZFFootViewController.m */; };
+		BFD6C9F31FD5CD6E0056CC20 /* ZFFootViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFD6C9F11FD5CD6E0056CC20 /* ZFFootViewController.xib */; };
+		BFD6C9F71FD5CD8A0056CC20 /* ZFGameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD6C9F51FD5CD8A0056CC20 /* ZFGameViewController.m */; };
+		BFD6C9F81FD5CD8A0056CC20 /* ZFGameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFD6C9F61FD5CD8A0056CC20 /* ZFGameViewController.xib */; };
+		BFD6C9FC1FD5CD990056CC20 /* ZFHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD6C9FA1FD5CD990056CC20 /* ZFHomeViewController.m */; };
+		BFD6C9FD1FD5CD990056CC20 /* ZFHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFD6C9FB1FD5CD990056CC20 /* ZFHomeViewController.xib */; };
+		BFD6CA041FD5CE620056CC20 /* ZFSettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD6CA031FD5CE620056CC20 /* ZFSettingViewController.m */; };
+		BFD6CA0C1FD5CFAF0056CC20 /* ZFWelcomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFD6CA0A1FD5CFAF0056CC20 /* ZFWelcomeViewController.m */; };
+		BFD6CA0D1FD5CFAF0056CC20 /* ZFWelcomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFD6CA0B1FD5CFAF0056CC20 /* ZFWelcomeViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,13 +33,33 @@
 		BFD6C9B61FD5C5CF0056CC20 /* ZF_NBA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZF_NBA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFD6C9B91FD5C5CF0056CC20 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		BFD6C9BA1FD5C5CF0056CC20 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		BFD6C9BC1FD5C5CF0056CC20 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		BFD6C9BD1FD5C5CF0056CC20 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		BFD6C9C01FD5C5CF0056CC20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BFD6C9C21FD5C5CF0056CC20 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFD6C9C51FD5C5CF0056CC20 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFD6C9C71FD5C5CF0056CC20 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BFD6C9C81FD5C5CF0056CC20 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		BFD6C9DE1FD5CB900056CC20 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		BFD6C9DF1FD5CC960056CC20 /* ZFTabBarControllerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFTabBarControllerViewController.h; sourceTree = "<group>"; };
+		BFD6C9E01FD5CC960056CC20 /* ZFTabBarControllerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFTabBarControllerViewController.m; sourceTree = "<group>"; };
+		BFD6C9E21FD5CCAC0056CC20 /* ZFNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFNavigationController.h; sourceTree = "<group>"; };
+		BFD6C9E31FD5CCAC0056CC20 /* ZFNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFNavigationController.m; sourceTree = "<group>"; };
+		BFD6C9EA1FD5CD1B0056CC20 /* ZFNbaViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFNbaViewController.h; sourceTree = "<group>"; };
+		BFD6C9EB1FD5CD1B0056CC20 /* ZFNbaViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFNbaViewController.m; sourceTree = "<group>"; };
+		BFD6C9EC1FD5CD1B0056CC20 /* ZFNbaViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZFNbaViewController.xib; sourceTree = "<group>"; };
+		BFD6C9EF1FD5CD6E0056CC20 /* ZFFootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFFootViewController.h; sourceTree = "<group>"; };
+		BFD6C9F01FD5CD6E0056CC20 /* ZFFootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFFootViewController.m; sourceTree = "<group>"; };
+		BFD6C9F11FD5CD6E0056CC20 /* ZFFootViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZFFootViewController.xib; sourceTree = "<group>"; };
+		BFD6C9F41FD5CD8A0056CC20 /* ZFGameViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFGameViewController.h; sourceTree = "<group>"; };
+		BFD6C9F51FD5CD8A0056CC20 /* ZFGameViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFGameViewController.m; sourceTree = "<group>"; };
+		BFD6C9F61FD5CD8A0056CC20 /* ZFGameViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZFGameViewController.xib; sourceTree = "<group>"; };
+		BFD6C9F91FD5CD990056CC20 /* ZFHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFHomeViewController.h; sourceTree = "<group>"; };
+		BFD6C9FA1FD5CD990056CC20 /* ZFHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFHomeViewController.m; sourceTree = "<group>"; };
+		BFD6C9FB1FD5CD990056CC20 /* ZFHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZFHomeViewController.xib; sourceTree = "<group>"; };
+		BFD6CA021FD5CE620056CC20 /* ZFSettingViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFSettingViewController.h; sourceTree = "<group>"; };
+		BFD6CA031FD5CE620056CC20 /* ZFSettingViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFSettingViewController.m; sourceTree = "<group>"; };
+		BFD6CA091FD5CFAF0056CC20 /* ZFWelcomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFWelcomeViewController.h; sourceTree = "<group>"; };
+		BFD6CA0A1FD5CFAF0056CC20 /* ZFWelcomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFWelcomeViewController.m; sourceTree = "<group>"; };
+		BFD6CA0B1FD5CFAF0056CC20 /* ZFWelcomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZFWelcomeViewController.xib; sourceTree = "<group>"; };
 		E56318759BB532D543513BCD /* libPods-ZF_NBA.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZF_NBA.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E9FD779D09A842627EB8497D /* Pods-ZF_NBA.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZF_NBA.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZF_NBA/Pods-ZF_NBA.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -74,17 +106,221 @@
 		BFD6C9B81FD5C5CF0056CC20 /* ZF_NBA */ = {
 			isa = PBXGroup;
 			children = (
-				BFD6C9B91FD5C5CF0056CC20 /* AppDelegate.h */,
-				BFD6C9BA1FD5C5CF0056CC20 /* AppDelegate.m */,
-				BFD6C9BC1FD5C5CF0056CC20 /* ViewController.h */,
-				BFD6C9BD1FD5C5CF0056CC20 /* ViewController.m */,
+				BFD6C9CF1FD5CB7A0056CC20 /* Classes */,
+				BFD6C9DD1FD5CB7A0056CC20 /* Library */,
 				BFD6C9BF1FD5C5CF0056CC20 /* Main.storyboard */,
 				BFD6C9C21FD5C5CF0056CC20 /* Assets.xcassets */,
 				BFD6C9C41FD5C5CF0056CC20 /* LaunchScreen.storyboard */,
 				BFD6C9C71FD5C5CF0056CC20 /* Info.plist */,
 				BFD6C9C81FD5C5CF0056CC20 /* main.m */,
+				BFD6C9DE1FD5CB900056CC20 /* PrefixHeader.pch */,
 			);
 			path = ZF_NBA;
+			sourceTree = "<group>";
+		};
+		BFD6C9CF1FD5CB7A0056CC20 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BFD6CA051FD5CFA00056CC20 /* Welcome */,
+				BFD6C9FE1FD5CDDA0056CC20 /* Setting */,
+				BFD6C9D01FD5CB7A0056CC20 /* Game */,
+				BFD6C9D41FD5CB7A0056CC20 /* Home */,
+				BFD6C9D81FD5CB7A0056CC20 /* Main */,
+				BFD6C9DC1FD5CB7A0056CC20 /* Tool */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		BFD6C9D01FD5CB7A0056CC20 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				BFD6C9D11FD5CB7A0056CC20 /* Controller */,
+				BFD6C9D21FD5CB7A0056CC20 /* Model */,
+				BFD6C9D31FD5CB7A0056CC20 /* View */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		BFD6C9D11FD5CB7A0056CC20 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BFD6C9EA1FD5CD1B0056CC20 /* ZFNbaViewController.h */,
+				BFD6C9EB1FD5CD1B0056CC20 /* ZFNbaViewController.m */,
+				BFD6C9EC1FD5CD1B0056CC20 /* ZFNbaViewController.xib */,
+				BFD6C9EF1FD5CD6E0056CC20 /* ZFFootViewController.h */,
+				BFD6C9F01FD5CD6E0056CC20 /* ZFFootViewController.m */,
+				BFD6C9F11FD5CD6E0056CC20 /* ZFFootViewController.xib */,
+				BFD6C9F41FD5CD8A0056CC20 /* ZFGameViewController.h */,
+				BFD6C9F51FD5CD8A0056CC20 /* ZFGameViewController.m */,
+				BFD6C9F61FD5CD8A0056CC20 /* ZFGameViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BFD6C9D21FD5CB7A0056CC20 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BFD6C9D31FD5CB7A0056CC20 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BFD6C9D41FD5CB7A0056CC20 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				BFD6C9D51FD5CB7A0056CC20 /* Controller */,
+				BFD6C9D61FD5CB7A0056CC20 /* Model */,
+				BFD6C9D71FD5CB7A0056CC20 /* View */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		BFD6C9D51FD5CB7A0056CC20 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BFD6C9F91FD5CD990056CC20 /* ZFHomeViewController.h */,
+				BFD6C9FA1FD5CD990056CC20 /* ZFHomeViewController.m */,
+				BFD6C9FB1FD5CD990056CC20 /* ZFHomeViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BFD6C9D61FD5CB7A0056CC20 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BFD6C9D71FD5CB7A0056CC20 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BFD6C9D81FD5CB7A0056CC20 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				BFD6C9D91FD5CB7A0056CC20 /* Controller */,
+				BFD6C9DA1FD5CB7A0056CC20 /* Model */,
+				BFD6C9DB1FD5CB7A0056CC20 /* View */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		BFD6C9D91FD5CB7A0056CC20 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BFD6C9B91FD5C5CF0056CC20 /* AppDelegate.h */,
+				BFD6C9BA1FD5C5CF0056CC20 /* AppDelegate.m */,
+				BFD6C9DF1FD5CC960056CC20 /* ZFTabBarControllerViewController.h */,
+				BFD6C9E01FD5CC960056CC20 /* ZFTabBarControllerViewController.m */,
+				BFD6C9E21FD5CCAC0056CC20 /* ZFNavigationController.h */,
+				BFD6C9E31FD5CCAC0056CC20 /* ZFNavigationController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BFD6C9DA1FD5CB7A0056CC20 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BFD6C9DB1FD5CB7A0056CC20 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BFD6C9DC1FD5CB7A0056CC20 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		BFD6C9DD1FD5CB7A0056CC20 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		BFD6C9FE1FD5CDDA0056CC20 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				BFD6C9FF1FD5CDDA0056CC20 /* Controller */,
+				BFD6CA001FD5CDDA0056CC20 /* Model */,
+				BFD6CA011FD5CDDA0056CC20 /* View */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		BFD6C9FF1FD5CDDA0056CC20 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BFD6CA021FD5CE620056CC20 /* ZFSettingViewController.h */,
+				BFD6CA031FD5CE620056CC20 /* ZFSettingViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BFD6CA001FD5CDDA0056CC20 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BFD6CA011FD5CDDA0056CC20 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BFD6CA051FD5CFA00056CC20 /* Welcome */ = {
+			isa = PBXGroup;
+			children = (
+				BFD6CA061FD5CFA00056CC20 /* Controller */,
+				BFD6CA071FD5CFA00056CC20 /* Model */,
+				BFD6CA081FD5CFA00056CC20 /* View */,
+			);
+			path = Welcome;
+			sourceTree = "<group>";
+		};
+		BFD6CA061FD5CFA00056CC20 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BFD6CA091FD5CFAF0056CC20 /* ZFWelcomeViewController.h */,
+				BFD6CA0A1FD5CFAF0056CC20 /* ZFWelcomeViewController.m */,
+				BFD6CA0B1FD5CFAF0056CC20 /* ZFWelcomeViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BFD6CA071FD5CFA00056CC20 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BFD6CA081FD5CFA00056CC20 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		EF2A3B15DA9C80C877E0FB85 /* Frameworks */ = {
@@ -156,9 +392,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFD6C9EE1FD5CD1B0056CC20 /* ZFNbaViewController.xib in Resources */,
 				BFD6C9C61FD5C5CF0056CC20 /* LaunchScreen.storyboard in Resources */,
 				BFD6C9C31FD5C5CF0056CC20 /* Assets.xcassets in Resources */,
 				BFD6C9C11FD5C5CF0056CC20 /* Main.storyboard in Resources */,
+				BFD6C9FD1FD5CD990056CC20 /* ZFHomeViewController.xib in Resources */,
+				BFD6C9F81FD5CD8A0056CC20 /* ZFGameViewController.xib in Resources */,
+				BFD6C9F31FD5CD6E0056CC20 /* ZFFootViewController.xib in Resources */,
+				BFD6CA0D1FD5CFAF0056CC20 /* ZFWelcomeViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -220,9 +461,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFD6C9BE1FD5C5CF0056CC20 /* ViewController.m in Sources */,
 				BFD6C9C91FD5C5CF0056CC20 /* main.m in Sources */,
+				BFD6C9FC1FD5CD990056CC20 /* ZFHomeViewController.m in Sources */,
+				BFD6CA041FD5CE620056CC20 /* ZFSettingViewController.m in Sources */,
+				BFD6CA0C1FD5CFAF0056CC20 /* ZFWelcomeViewController.m in Sources */,
+				BFD6C9ED1FD5CD1B0056CC20 /* ZFNbaViewController.m in Sources */,
+				BFD6C9F71FD5CD8A0056CC20 /* ZFGameViewController.m in Sources */,
+				BFD6C9F21FD5CD6E0056CC20 /* ZFFootViewController.m in Sources */,
+				BFD6C9E11FD5CC960056CC20 /* ZFTabBarControllerViewController.m in Sources */,
 				BFD6C9BB1FD5C5CF0056CC20 /* AppDelegate.m in Sources */,
+				BFD6C9E41FD5CCAC0056CC20 /* ZFNavigationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +534,7 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREFIX_HEADER = /Users/bailing/Desktop/ZF_NBA2/ZF_NBA/PrefixHeader.pch;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -339,6 +588,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = /Users/bailing/Desktop/ZF_NBA2/ZF_NBA/PrefixHeader.pch;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -359,7 +609,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3R48RV923F;
+				GCC_PREFIX_HEADER = /Users/bailing/Desktop/ZF_NBA2/ZF_NBA/PrefixHeader.pch;
 				INFOPLIST_FILE = ZF_NBA/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bailing.ZF-NBA";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -374,7 +626,9 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3R48RV923F;
+				GCC_PREFIX_HEADER = /Users/bailing/Desktop/ZF_NBA2/ZF_NBA/PrefixHeader.pch;
 				INFOPLIST_FILE = ZF_NBA/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.bailing.ZF-NBA";
 				PRODUCT_NAME = "$(TARGET_NAME)";
