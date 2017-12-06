@@ -5,7 +5,6 @@
 //  Created by bailing on 2017/12/4.
 //  Copyright © 2017年 zhufeng. All rights reserved.
 //
-
 #import "ZFTabBarControllerViewController.h"
 #import "ZFGameViewController.h"
 #import "ZFHomeViewController.h"
@@ -17,10 +16,10 @@
 +(void)initialize{
     [super initialize];
     NSMutableDictionary *attrs = [NSMutableDictionary dictionary];
-    attrs[NSFontAttributeName] = [UIFont systemFontOfSize:12];
+    attrs[NSFontAttributeName] = [UIFont systemFontOfSize:10];
     attrs[NSForegroundColorAttributeName] =  [UIColor colorWithRed:(122.0f/255.0f) green:(126.0f/255.0) blue:(131.0f/255.0f) alpha:1 ];
     NSMutableDictionary *selectAttrs = [NSMutableDictionary dictionary];
-    selectAttrs[NSFontAttributeName] = [UIFont systemFontOfSize:12];
+    selectAttrs[NSFontAttributeName] = [UIFont systemFontOfSize:10];
     selectAttrs[NSForegroundColorAttributeName] = [UIColor colorWithRed:(255.0f/255.0f) green:(126.0f/255.0) blue:(0.0f/255.0f) alpha:1];
     UITabBarItem *item = [UITabBarItem appearance];
     [item setTitleTextAttributes:attrs forState:UIControlStateNormal];
@@ -48,11 +47,10 @@
 }
 -(void)setupAllControllers{
     ZFHomeViewController *homeVc = [[ZFHomeViewController alloc]init];
-    [self setupChildViewVC:homeVc title:@"今日比赛" norImage:@"zf_home2" selectImage:@"zf_home"];
+    [self setupChildViewVC:homeVc title:@"今日比赛" norImage:@"" selectImage:@""];
     ZFGameViewController *gameVc = [[ZFGameViewController alloc]init];
-    [self setupChildViewVC:gameVc title:@"全部赛程" norImage:@"zf_game2" selectImage:@"zf_game"];
+    [self setupChildViewVC:gameVc title:@"全部赛程" norImage:@"" selectImage:@""];
     ZFSettingViewController *settingVc = [[ZFSettingViewController alloc]init];
-    [self setupChildViewVC:settingVc title:@"我的设置" norImage:@"zf_setting2" selectImage:@"zf_setting"];
+    [self setupChildViewVC:settingVc title:@"我的设置" norImage:@"" selectImage:@""];
 }
-
 @end

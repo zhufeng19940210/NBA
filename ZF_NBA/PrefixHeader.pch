@@ -7,8 +7,25 @@
 //
 #ifndef PrefixHeader_pch
 #define PrefixHeader_pch
+#import <AFNetworking.h>
+#import <YYModel.h>
+#import <YYCache.h>
+#import <YYWebImage.h>
+#import <MBProgressHUD.h>
+/****************访问的URL***********/
+#define ZF_HOME_NBA_URL  @"http://api.avatardata.cn/Nba/NomalRace?key=f1afe0fc2b2c43a79bf14ff57fdd4bb8"
+#define ZF_HOME_FOOT_URL @"http://api.avatardata.cn/Football/Query?key=755afbbee32b4e39a53d658540931876"
+#define ZF_GAME_NBA_URL  @""
+#define ZF_GAME_FOOT_URL @""
+/***********ZFSegementView用到的宏定义***************/
+#define ZF_LINE_WIDTH 40
+#define ZF_LINE_WIDTH3 60
+#define ZF_LINE_WIDTH2 30
+#define ZF_BASE_SCALE 0.2
 /******** 关于颜色的宏********/
 // 带透明度的颜色
+#define UIColorFromRGB(rgbValue,alp) [UIColor colorWithRed:((float)((rgbValue & 0xFF0000) >> 16))/255.0 green:((float)((rgbValue & 0xFF00) >> 8))/255.0 blue:((float)(rgbValue & 0xFF))/255.0 alpha:alp]
+
 #define  ZF_NAVBAR_BG  [UIColor colorWithRed:(76/255.0f) green:(199/255.0f) blue:(145/255.0f) alpha:1.0 ]
 #define  ZF_HOME_NORMAL_BG [UIColor colorWithRed:(83/255.0f) green:(83/255.0f) blue:(83/255.0f) alpha:1.0]
 #define ZFColorA(r,g,b,a) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:(a)]

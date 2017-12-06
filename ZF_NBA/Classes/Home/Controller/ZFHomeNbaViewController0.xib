@@ -10,9 +10,9 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZFNbaViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ZFHomeNbaViewController0">
             <connections>
-                <outlet property="nbaTableView" destination="nQw-Yt-4Nx" id="11C-QE-v3f"/>
+                <outlet property="homeNbaTableView" destination="LmX-Ue-NGm" id="sop-wD-qDA"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -21,17 +21,17 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nQw-Yt-4Nx">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="617"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LmX-Ue-NGm">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="nQw-Yt-4Nx" secondAttribute="bottom" constant="50" id="PKl-71-IWA"/>
-                <constraint firstItem="nQw-Yt-4Nx" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="Pq7-UE-tyL"/>
-                <constraint firstItem="nQw-Yt-4Nx" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="WW3-WV-ASQ"/>
-                <constraint firstItem="nQw-Yt-4Nx" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="q46-Nk-xav"/>
+                <constraint firstItem="LmX-Ue-NGm" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="9C0-W9-0Wh"/>
+                <constraint firstItem="LmX-Ue-NGm" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="Z1P-Bw-93B"/>
+                <constraint firstItem="LmX-Ue-NGm" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="ZIG-GA-IaV"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="LmX-Ue-NGm" secondAttribute="bottom" id="obA-9j-HfO"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="Q5M-cg-NOt"/>
             <point key="canvasLocation" x="25.5" y="51.5"/>

@@ -1,9 +1,3 @@
-
-
-
-
-
-
 //
 //  ZFNbaViewController.m
 //  ZF_NBA
@@ -11,19 +5,40 @@
 //  Created by bailing on 2017/12/4.
 //  Copyright © 2017年 zhufeng. All rights reserved.
 //
-
 #import "ZFNbaViewController.h"
-
-@interface ZFNbaViewController ()
-
+@interface ZFNbaViewController ()<UITableViewDelegate,UITableViewDataSource>
+@property (weak, nonatomic) IBOutlet UITableView *nbaTableView;
 @end
-
 @implementation ZFNbaViewController
-
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    self.view.backgroundColor = [UIColor whiteColor];
+    [self setupTableView];
 }
+-(void)setupTableView{
+    self.nbaTableView.delegate = self;
+    self.nbaTableView.dataSource = self;
+    self.nbaTableView.rowHeight = 50;
+    self.nbaTableView.showsVerticalScrollIndicator = NO;
+    self.nbaTableView.showsHorizontalScrollIndicator = NO;
+}
+#pragma mark - uitableViewDelegate
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 40;
+}
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    static NSString *identity = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:identity];
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:identity];
+    }
+    cell.textLabel.text = @"nba测试数据";
+    return cell;
+}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
