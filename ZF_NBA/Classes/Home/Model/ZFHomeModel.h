@@ -7,10 +7,10 @@
 //
 #import <Foundation/Foundation.h>
 @interface ZFHomeModel : NSObject
-@property (nonatomic,copy)NSString *link1text;
-@property (nonatomic,copy)NSString *link1url;
-@property (nonatomic,copy)NSString *link2text;
-@property (nonatomic,copy)NSString *link2url;
+@property (nonatomic,copy)NSString *link1text; //视频集锦
+@property (nonatomic,copy)NSString *link1url;  //视频集锦的url
+@property (nonatomic,copy)NSString *link2text; // 技术统计
+@property (nonatomic,copy)NSString *link2url;  // 技术统计的url
 @property (nonatomic,copy)NSString *m_link1url;
 @property (nonatomic,copy)NSString *m_link2url;
 @property (nonatomic,copy)NSString *player1;

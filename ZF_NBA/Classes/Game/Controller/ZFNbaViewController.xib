@@ -21,14 +21,14 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nQw-Yt-4Nx">
-                    <rect key="frame" x="0.0" y="0.0" width="375" height="617"/>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="nQw-Yt-4Nx">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                 </tableView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="nQw-Yt-4Nx" secondAttribute="bottom" constant="50" id="PKl-71-IWA"/>
+                <constraint firstItem="Q5M-cg-NOt" firstAttribute="bottom" secondItem="nQw-Yt-4Nx" secondAttribute="bottom" id="PKl-71-IWA"/>
                 <constraint firstItem="nQw-Yt-4Nx" firstAttribute="leading" secondItem="Q5M-cg-NOt" secondAttribute="leading" id="Pq7-UE-tyL"/>
                 <constraint firstItem="nQw-Yt-4Nx" firstAttribute="trailing" secondItem="Q5M-cg-NOt" secondAttribute="trailing" id="WW3-WV-ASQ"/>
                 <constraint firstItem="nQw-Yt-4Nx" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="q46-Nk-xav"/>

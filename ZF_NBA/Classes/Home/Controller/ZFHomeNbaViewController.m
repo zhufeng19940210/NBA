@@ -13,6 +13,7 @@
 #import "ZFHomeNbaCell.h"
 #import "ZFHomeModel.h"
 #import "ZFLiveModel.h"
+#import "ZFVideoViewController.h"
 @interface ZFHomeNbaViewController ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *homeNbaTableView;
 @property (nonatomic,strong)NSMutableArray *normalArray;
@@ -45,7 +46,7 @@ static NSString *const  homeNbaCellIdentity = @"HomeNbaCellIdentity";
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     [self.normalArray removeAllObjects];
     [self.liveArray removeAllObjects];
-    [[ZFNetWorkCacheTool ShareWorkTool]GETCacheWithUrl:ZF_HOME_NBA_URL paramter:nil success:^(id responseObject) {
+    [[ZFNetWorkCacheTool ShareWorkTool]GETWithUrl:ZF_HOME_NBA_URL parameter:nil success:^(id responseObject) {
         [MBProgressHUD hideHUDForView:self.view animated:YES];
         NSLog(@"responseObject:%@",responseObject);
         NSArray *norarray = responseObject[@"result"][@"list"][1][@"tr"];
@@ -82,7 +83,6 @@ static NSString *const  homeNbaCellIdentity = @"HomeNbaCellIdentity";
     //注册cell
     [self.homeNbaTableView registerNib:[UINib nibWithNibName:@"ZFHomeNbaCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:homeNbaCellIdentity];
 }
-
 #pragma mark -uitableViewDelegate
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     
@@ -93,9 +93,33 @@ static NSString *const  homeNbaCellIdentity = @"HomeNbaCellIdentity";
     if (cell== nil) {
         cell = [[[NSBundle mainBundle]loadNibNamed:@"ZFHomeNbaCell" owner:nil options:nil]lastObject];
     }
-    ZFHomeModel *model = self.normalArray[indexPath.row];
+    int tag = (int)indexPath.row;
+    cell.jishuBtn.tag = tag;
+    cell.videoBtn.tag = tag;
+    [cell.jishuBtn addTarget:self action:@selector(JuSuTongJiBtn:) forControlEvents:UIControlEventTouchUpInside];
+    [cell.videoBtn addTarget:self action:@selector(ViodeoBtn:) forControlEvents:UIControlEventTouchUpInside];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    ZFHomeModel *model = self.normalArray[tag];
     cell.model = model;
     return cell;
+}
+#pragma mark - 技术统计的事件
+-(void)JuSuTongJiBtn:(UIButton *)button{
+    int tag = (int)button.tag;
+    ZFHomeModel *model = self.normalArray[tag];
+    ZFVideoViewController *videoVc = [[ZFVideoViewController alloc]init];
+    videoVc.urlStr = model.link2url;
+    videoVc.titleStr = @"技术统计";
+    [self.navigationController pushViewController:videoVc animated:YES];
+}
+#pragma mark --视频集锦
+-(void)ViodeoBtn:(UIButton *)button{
+    int tag = (int)button.tag;
+    ZFHomeModel *model = self.normalArray[tag];
+    ZFVideoViewController *videoVc = [[ZFVideoViewController alloc]init];
+    videoVc.urlStr = model.link1url;
+    videoVc.titleStr = @"视频集锦";
+    [self.navigationController pushViewController:videoVc animated:YES];
 }
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

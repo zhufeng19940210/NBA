@@ -18,10 +18,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *rightNameLabel;
 /*left的球队的Label*/
 @property (weak, nonatomic) IBOutlet UILabel *leftNameLabel;
-/*技术统计的Btn*/
-@property (weak, nonatomic) IBOutlet UIButton *jishuBtn;
-/*视频的Btn*/
-@property (weak, nonatomic) IBOutlet UIButton *videoBtn;
 /*状态的Label*/
 @property (weak, nonatomic) IBOutlet UILabel *statusLabel;
 /*时间的Label*/

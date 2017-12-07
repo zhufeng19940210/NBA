@@ -51,7 +51,7 @@
     self.navigationController.navigationBar.shadowImage = [UIImage new];
     NSArray *titleArr = @[@"昨天",@"今天",@"后天"];
     SGPageTitleViewConfigure *configure = [SGPageTitleViewConfigure pageTitleViewConfigure];
-    configure.indicatorScrollStyle = SGIndicatorScrollStyleHalf;
+    configure.indicatorScrollStyle =  SGIndicatorScrollStyleEnd;
     configure.titleFont = [UIFont systemFontOfSize:18];
     self.pageTitleView = [SGPageTitleView pageTitleViewWithFrame:CGRectMake(ZFScreenW/2-120, 25, 200, 44) delegate:self titleNames:titleArr configure:configure];
     self.pageTitleView.backgroundColor = [UIColor clearColor];

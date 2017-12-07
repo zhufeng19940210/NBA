@@ -22,12 +22,20 @@
         ZFTabBarControllerViewController *tabbarVc = [[ZFTabBarControllerViewController alloc]init];
         self.window.rootViewController = tabbarVc;
     }
+    [self setupLogoJson];
     //设置状态栏的样式
     application.statusBarStyle = UIStatusBarStyleLightContent;
     //程序启动完后显示状态栏
     application.statusBarHidden = NO;
     [self.window makeKeyAndVisible];
     return YES;
+}
+-(void)setupLogoJson{
+    NSString *path = [[NSBundle mainBundle] pathForResource:@"Team_Logo" ofType:@"json"];
+    NSData *jsonData = [NSData dataWithContentsOfFile:path options:NSDataReadingMappedIfSafe error:nil];
+    NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:jsonData options:NSJSONReadingMutableContainers error:nil];
+    self.logoDict = dic;
+    NSLog(@"logoDict:%@",self.logoDict);
 }
 - (void)applicationWillResignActive:(UIApplication *)application {
     // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

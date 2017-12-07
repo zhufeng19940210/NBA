@@ -9,5 +9,10 @@
 #import <UIKit/UIKit.h>
 #import "ZFHomeModel.h"
 @interface ZFHomeNbaCell : UITableViewCell
+/*技术统计的Btn*/
+@property (weak, nonatomic) IBOutlet UIButton *jishuBtn;
+/*视频的Btn*/
+@property (weak, nonatomic) IBOutlet UIButton *videoBtn;
 @property (nonatomic,strong) ZFHomeModel *model;
+
 @end

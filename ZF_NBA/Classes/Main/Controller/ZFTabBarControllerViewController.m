@@ -46,8 +46,8 @@
     [self setupAllControllers];
 }
 -(void)setupAllControllers{
-    ZFHomeViewController *homeVc = [[ZFHomeViewController alloc]init];
-    [self setupChildViewVC:homeVc title:@"今日比赛" norImage:@"" selectImage:@""];
+//    ZFHomeViewController *homeVc = [[ZFHomeViewController alloc]init];
+//    [self setupChildViewVC:homeVc title:@"今日比赛" norImage:@"" selectImage:@""];
     ZFGameViewController *gameVc = [[ZFGameViewController alloc]init];
     [self setupChildViewVC:gameVc title:@"全部赛程" norImage:@"" selectImage:@""];
     ZFSettingViewController *settingVc = [[ZFSettingViewController alloc]init];

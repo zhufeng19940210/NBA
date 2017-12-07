@@ -1,0 +1,28 @@
+{
+    "result":[
+        {
+              "name":"英超",
+              "url":"yichao.png"
+        },
+        {
+              "name":"西甲",
+              "url":"xijia.png"
+        },
+        {
+              "name":"德甲",
+              "url":"dejia.png"
+        },
+        {
+              "name":"意甲",
+              "url":"yijia.png"
+        },
+        {
+              "name":"法甲",
+              "url":"fajia.png"
+        },
+        {
+              "name":"中超",
+              "url":"zhongchao.png"
+        }
+    ]
+}
