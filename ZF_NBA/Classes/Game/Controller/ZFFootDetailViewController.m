@@ -25,7 +25,6 @@
 @property (nonatomic,strong)NSMutableArray *titleArray;
 @property (nonatomic,strong)NSMutableArray *game1Array;
 @property (nonatomic,strong)NSMutableArray *game2Array;
-@property (nonatomic,strong)NSMutableArray *game3Array;
 @property (nonatomic,strong)NSMutableArray *game4Array;
 @end
 @implementation ZFFootDetailViewController
@@ -65,12 +64,6 @@
     }
     return _game2Array;
 }
--(NSMutableArray *)game3Array{
-    if (!_game3Array) {
-        _game3Array = [NSMutableArray array];
-    }
-    return _game3Array;
-}
 -(NSMutableArray *)game4Array{
     if (!_game4Array) {
         _game4Array = [NSMutableArray array];
@@ -87,7 +80,6 @@
     [self.titleArray removeAllObjects];
     [self.game1Array removeAllObjects];
     [self.game2Array removeAllObjects];
-    [self.game3Array removeAllObjects];
     [self.game4Array removeAllObjects];
     [MBProgressHUD showHUDAddedTo:self.view animated:YES];
     [[ZFNetWorkCacheTool ShareWorkTool]GETWithUrl:urlStr parameter:nil success:^(id responseObject) {
@@ -101,26 +93,26 @@
         [self.titleArray addObject:name2];
         [self.titleArray addObject:name4];
         NSLog(@"dict:%@",dict);
-        NSArray *game1Array = responseObject[@"result"][@"views"][@"saicheng1"];
-        NSArray *game2Array = responseObject[@"result"][@"views"][@"saicheng2"];
-        NSArray *game4Array = responseObject[@"result"][@"views"][@"sheshoubang"];
-        if (game1Array.count !=0) {
-            for (NSDictionary *dict2 in game1Array) {
-                ZFFootSubModel *subModel = [ZFFootSubModel yy_modelWithJSON:dict2];
-                [self.game1Array addObject:subModel];
-            }
+        if (responseObject[@"result"][@"views"][@"saicheng1"] !=nil) {
+            NSArray * game1Array=responseObject[@"result"][@"views"][@"saicheng1"];
+                for (NSDictionary *dict2 in game1Array) {
+                    ZFFootSubModel *subModel = [ZFFootSubModel yy_modelWithJSON:dict2];
+                    [self.game1Array addObject:subModel];
+                }
         }
-        else if (game2Array.count !=0) {
-            for (NSDictionary *dict2 in game2Array) {
-                ZFFootSubModel *subModel = [ZFFootSubModel yy_modelWithJSON:dict2];
-                [self.game2Array addObject:subModel];
-            }
+        if (responseObject[@"result"][@"views"][@"saicheng2"] != nil) {
+            NSArray *game2Array  = responseObject[@"result"][@"views"][@"saicheng2"];
+                for (NSDictionary *dict2 in game2Array) {
+                    ZFFootSubModel *subModel = [ZFFootSubModel yy_modelWithJSON:dict2];
+                    [self.game2Array addObject:subModel];
+                }
         }
-        else if (game4Array.count !=0) {
-            for (NSDictionary *dict2 in game4Array) {
-                ZFFootSubModel4 *subModel4 = [ZFFootSubModel4 yy_modelWithJSON:dict2];
-                [self.game4Array addObject:subModel4];
-            }
+        if (responseObject[@"result"][@"views"][@"sheshoubang"] !=nil) {
+             NSArray *game4Array = responseObject[@"result"][@"views"][@"sheshoubang"];
+                for (NSDictionary *dict2 in game4Array) {
+                    ZFFootSubModel4 *subModel4 = [ZFFootSubModel4 yy_modelWithJSON:dict2];
+                    [self.game4Array addObject:subModel4];
+                }
         }
         [self setupPageView];
     } failure:^(NSString *error) {
@@ -128,9 +120,6 @@
     }];
 }
 - (void)setupPageView {
-    self.foot1Vc.dataArray = self.game1Array;
-    self.foot2Vc.dataArray = self.game2Array;
-    self.foot4vc.dataArray = self.game4Array;
     SGPageTitleViewConfigure *configure = [SGPageTitleViewConfigure pageTitleViewConfigure];
     configure.indicatorScrollStyle = SGIndicatorScrollStyleHalf;
     configure.titleFont = [UIFont systemFontOfSize:18];
@@ -143,6 +132,10 @@
     _pageTitleView.selectedIndex = 0;
     _pageTitleView.isNeedBounces = NO;
     [self.view addSubview:_pageTitleView];
+    NSLog(@"self.game1Array:%lu,self.game2Array:%d,self.game4Array:%d",(unsigned long)self.game1Array.count,self.game2Array.count,self.game4Array.count);
+    self.foot1Vc.dataArray = self.game1Array;
+    self.foot2Vc.dataArray = self.game2Array;
+    self.foot4vc.dataArray = self.game4Array;
     NSArray *childArr = @[self.foot1Vc,self.foot2Vc,self.foot4vc];
     /// pageContentView
     CGFloat contentViewHeight = self.view.frame.size.height - CGRectGetMaxY(_pageTitleView.frame);

@@ -5,13 +5,14 @@
 //  Created by bailing on 2017/12/6.
 //  Copyright © 2017年 zhufeng. All rights reserved.
 //
-
 #import "ZFFootSubViewController2.h"
 #import "ZFFootSubModel.h"
+#import "ZFFootSubTableViewCell.h"
 @interface ZFFootSubViewController2 ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *footTableView;
 @property (nonatomic,strong)NSMutableArray *array;
 @end
+static NSString *const footSubCell = @"footsubCellIdentity";
 @implementation ZFFootSubViewController2
 -(NSMutableArray *)array{
     if (!_array) {
@@ -31,19 +32,21 @@
     self.footTableView.dataSource = self;
     self.footTableView.showsVerticalScrollIndicator = NO;
     self.footTableView.showsHorizontalScrollIndicator = NO;
+    self.footTableView.rowHeight = 60;
+    //注册cell
+    [self.footTableView registerNib:[UINib nibWithNibName:@"ZFFootSubTableViewCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:footSubCell];
 }
 #pragma makr - uitableViewdelegate
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return self.array.count;
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    static NSString *cellIdentity = @"Cell";
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellIdentity];
+    ZFFootSubTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:footSubCell];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentity];
+        cell = [[[NSBundle mainBundle]loadNibNamed:@"ZFFootSubTableViewCell" owner:nil options:nil]lastObject];
     }
     ZFFootSubModel *model = self.array[indexPath.row];
-    cell.textLabel.text = model.c4T1;
+    cell.footModel = model;
     return cell;
 }
 @end

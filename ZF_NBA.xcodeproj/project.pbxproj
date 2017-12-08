@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		50EC09AE52FF8A87BC725D50 /* libPods-ZF_NBA.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E56318759BB532D543513BCD /* libPods-ZF_NBA.a */; };
+		BF3A9CB81FD9F274000987F3 /* ZFFootSubTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3A9CB61FD9F274000987F3 /* ZFFootSubTableViewCell.m */; };
+		BF3A9CB91FD9F274000987F3 /* ZFFootSubTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF3A9CB71FD9F274000987F3 /* ZFFootSubTableViewCell.xib */; };
+		BF3A9CBD1FD9FEB3000987F3 /* ZFFootsubTableViewCell4.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3A9CBB1FD9FEB3000987F3 /* ZFFootsubTableViewCell4.m */; };
+		BF3A9CBE1FD9FEB3000987F3 /* ZFFootsubTableViewCell4.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF3A9CBC1FD9FEB3000987F3 /* ZFFootsubTableViewCell4.xib */; };
 		BFA880E51FD8639A004B4F57 /* ZFVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA880E31FD8639A004B4F57 /* ZFVideoViewController.m */; };
 		BFA880E61FD8639A004B4F57 /* ZFVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFA880E41FD8639A004B4F57 /* ZFVideoViewController.xib */; };
 		BFA880EE1FD868BD004B4F57 /* ZFTeamModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA880ED1FD868BD004B4F57 /* ZFTeamModel.m */; };
@@ -77,6 +81,12 @@
 
 /* Begin PBXFileReference section */
 		61BC4258355CE30D47BB43CD /* Pods-ZF_NBA.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZF_NBA.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZF_NBA/Pods-ZF_NBA.debug.xcconfig"; sourceTree = "<group>"; };
+		BF3A9CB51FD9F274000987F3 /* ZFFootSubTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFFootSubTableViewCell.h; sourceTree = "<group>"; };
+		BF3A9CB61FD9F274000987F3 /* ZFFootSubTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFFootSubTableViewCell.m; sourceTree = "<group>"; };
+		BF3A9CB71FD9F274000987F3 /* ZFFootSubTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZFFootSubTableViewCell.xib; sourceTree = "<group>"; };
+		BF3A9CBA1FD9FEB3000987F3 /* ZFFootsubTableViewCell4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFFootsubTableViewCell4.h; sourceTree = "<group>"; };
+		BF3A9CBB1FD9FEB3000987F3 /* ZFFootsubTableViewCell4.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFFootsubTableViewCell4.m; sourceTree = "<group>"; };
+		BF3A9CBC1FD9FEB3000987F3 /* ZFFootsubTableViewCell4.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZFFootsubTableViewCell4.xib; sourceTree = "<group>"; };
 		BFA880E21FD8639A004B4F57 /* ZFVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFVideoViewController.h; sourceTree = "<group>"; };
 		BFA880E31FD8639A004B4F57 /* ZFVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFVideoViewController.m; sourceTree = "<group>"; };
 		BFA880E41FD8639A004B4F57 /* ZFVideoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZFVideoViewController.xib; sourceTree = "<group>"; };
@@ -221,6 +231,12 @@
 				BFA8812A1FD8BEC3004B4F57 /* ZFFootSubViewController4.h */,
 				BFA8812B1FD8BEC3004B4F57 /* ZFFootSubViewController4.m */,
 				BFA8812C1FD8BEC3004B4F57 /* ZFFootSubViewController4.xib */,
+				BF3A9CB51FD9F274000987F3 /* ZFFootSubTableViewCell.h */,
+				BF3A9CB61FD9F274000987F3 /* ZFFootSubTableViewCell.m */,
+				BF3A9CB71FD9F274000987F3 /* ZFFootSubTableViewCell.xib */,
+				BF3A9CBA1FD9FEB3000987F3 /* ZFFootsubTableViewCell4.h */,
+				BF3A9CBB1FD9FEB3000987F3 /* ZFFootsubTableViewCell4.m */,
+				BF3A9CBC1FD9FEB3000987F3 /* ZFFootsubTableViewCell4.xib */,
 			);
 			path = FootController;
 			sourceTree = "<group>";
@@ -609,10 +625,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF3A9CBE1FD9FEB3000987F3 /* ZFFootsubTableViewCell4.xib in Resources */,
 				BFA881241FD8BE91004B4F57 /* ZFFootSubViewController2.xib in Resources */,
 				BFD6C9EE1FD5CD1B0056CC20 /* ZFNbaViewController.xib in Resources */,
 				BFA881041FD87EEC004B4F57 /* foot.json in Resources */,
 				BFA880FB1FD876EB004B4F57 /* ZFNabDetailViewController.xib in Resources */,
+				BF3A9CB91FD9F274000987F3 /* ZFFootSubTableViewCell.xib in Resources */,
 				BFA881001FD876FB004B4F57 /* ZFFootDetailViewController.xib in Resources */,
 				BFB51CC11FD759EB00A953B4 /* ZFHomeNbaHeaerView.xib in Resources */,
 				BFD6C9C61FD5C5CF0056CC20 /* LaunchScreen.storyboard in Resources */,
@@ -710,8 +728,10 @@
 				BFA8812D1FD8BEC3004B4F57 /* ZFFootSubViewController4.m in Sources */,
 				BFA8811E1FD8BE76004B4F57 /* ZFFootSubViewController1.m in Sources */,
 				BFB51CBB1FD759B300A953B4 /* ZFHomeNbaCell.m in Sources */,
+				BF3A9CBD1FD9FEB3000987F3 /* ZFFootsubTableViewCell4.m in Sources */,
 				BFD6CA0C1FD5CFAF0056CC20 /* ZFWelcomeViewController.m in Sources */,
 				BFB51CAB1FD7346700A953B4 /* ZFHomeNbaViewController.m in Sources */,
+				BF3A9CB81FD9F274000987F3 /* ZFFootSubTableViewCell.m in Sources */,
 				BFB51CB71FD758BF00A953B4 /* ZFNetWorkCacheTool.m in Sources */,
 				BFB51CDD1FD78AFB00A953B4 /* ZFHomeNbaViewController0.m in Sources */,
 				BFA8810F1FD8A39E004B4F57 /* ZFNbaDetail.m in Sources */,
