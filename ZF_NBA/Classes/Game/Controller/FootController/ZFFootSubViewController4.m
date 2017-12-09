@@ -5,10 +5,10 @@
 //  Created by bailing on 2017/12/6.
 //  Copyright © 2017年 zhufeng. All rights reserved.
 //
-
 #import "ZFFootSubViewController4.h"
 #import "ZFFootSubModel4.h"
 #import "ZFFootsubTableViewCell4.h"
+#import "ZFVideoViewController.h"
 @interface ZFFootSubViewController4 () <UITableViewDataSource,UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *footTableView;
 @property (nonatomic,strong)NSMutableArray *array;
@@ -50,5 +50,13 @@ static NSString *const footSubCellIdentity = @"FootCellIdentity";
     ZFFootSubModel4 *model = self.array[indexPath.row];
     cell.model = model;
     return cell;
+}
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    ZFFootSubModel4 *model = self.array[indexPath.row];
+    ZFVideoViewController *videoVc = [[ZFVideoViewController alloc]init];
+    videoVc.titleStr = [NSString stringWithFormat:@"%@--%@",model.c3,model.c2];
+    videoVc.urlStr = model.c2L;
+    [self.navigationController pushViewController:videoVc animated:YES];
 }
 @end

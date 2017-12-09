@@ -12,8 +12,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *numberLabel;
 /*球队的名称Label*/
 @property (weak, nonatomic) IBOutlet UILabel *teamLabel;
-/*player的Label*/
-@property (weak, nonatomic) IBOutlet UILabel *playerLabel;
 /*进球数量Label*/
 @property (weak, nonatomic) IBOutlet UILabel *numberCountLabel;
 /*黄牌数量Label*/
@@ -27,11 +25,10 @@
 
 -(void)setModel:(ZFFootSubModel4 *)model{
     _model = model;
-    self.numberLabel.text= model.c1;
-    self.teamLabel.text = model.c3;
-    self.playerLabel.text = model.c2;
-    self.numberLabel.text = [NSString stringWithFormat:@"进球数:%@",model.c4];
-    self.huangpaiLabel.text = [NSString stringWithFormat:@"黄牌数:%@",model.c5];
+    self.numberLabel.text= [NSString stringWithFormat:@"%d",model.c1];
+    self.teamLabel.text = [NSString stringWithFormat:@"%@--%@",model.c3,model.c2];
+    self.numberCountLabel.text = [NSString stringWithFormat:@"进球数:%d",model.c4];
+    self.huangpaiLabel.text = [NSString stringWithFormat:@"黄牌数:%d",model.c5];
 }
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {
     [super setSelected:selected animated:animated];

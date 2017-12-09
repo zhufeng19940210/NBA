@@ -7,17 +7,34 @@
 //
 
 #import "ZFSettingViewController.h"
-
 @interface ZFSettingViewController ()
-
+@property (nonatomic,strong)UITableView *setttingTableView;
+@property (nonatomic,strong)NSMutableArray *dataArray;
 @end
-
 @implementation ZFSettingViewController
-
+-(NSMutableArray *)dataArray{
+    if (!_dataArray) {
+        _dataArray = [NSMutableArray arrayWithObjects:@"",@"",@"", nil];
+    }
+    return _dataArray;
+}
+-(UITableView *)setttingTableView{
+    if (!_setttingTableView) {
+        _setttingTableView = [[UITableView alloc]initWithFrame:CGRectMake(0, 0, ZFScreenW, ZFScreenH) style:UITableViewStylePlain];
+        _setttingTableView.delegate = self;
+        _setttingTableView.dataSource = self;
+        _setttingTableView.showsVerticalScrollIndicator = NO;
+        _setttingTableView.showsHorizontalScrollIndicator = NO;
+        _setttingTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
+    }
+    return _setttingTableView;
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    self.view.backgroundColor = [UIColor whiteColor];
+    [self.view addSubview:self.setttingTableView];
 }
+#pragma mark -uitableViewDelegate
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

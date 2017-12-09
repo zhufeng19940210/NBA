@@ -25,12 +25,6 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="球员" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fg7-UG-FZV">
-                        <rect key="frame" x="65" y="21.5" width="31" height="18"/>
-                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                        <nil key="textColor"/>
-                        <nil key="highlightedColor"/>
-                    </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fdH-CM-5hW">
                         <rect key="frame" x="7" y="21.5" width="7" height="18"/>
                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
@@ -63,7 +57,6 @@
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="8pM-ir-Hn8" secondAttribute="trailing" constant="8" id="37Z-e8-aVg"/>
                     <constraint firstAttribute="bottom" secondItem="msl-fX-khc" secondAttribute="bottom" constant="0.5" id="9lr-xY-u9K"/>
-                    <constraint firstItem="Fg7-UG-FZV" firstAttribute="leading" secondItem="TSq-QL-vMb" secondAttribute="trailing" constant="10" id="FRK-3f-Oev"/>
                     <constraint firstItem="TSq-QL-vMb" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="QSP-0l-Lb2"/>
                     <constraint firstItem="fdH-CM-5hW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="7" id="Uqq-16-d9h"/>
                     <constraint firstItem="K3T-2u-M2p" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="XQQ-Nl-brC"/>
@@ -71,7 +64,6 @@
                     <constraint firstItem="8pM-ir-Hn8" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="ePx-eW-Mgs"/>
                     <constraint firstItem="8pM-ir-Hn8" firstAttribute="leading" secondItem="K3T-2u-M2p" secondAttribute="trailing" constant="10" id="iW3-tO-Ccr"/>
                     <constraint firstItem="msl-fX-khc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="s0P-Yd-wZq"/>
-                    <constraint firstItem="Fg7-UG-FZV" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="smT-WX-eN3"/>
                     <constraint firstItem="TSq-QL-vMb" firstAttribute="leading" secondItem="fdH-CM-5hW" secondAttribute="trailing" constant="10" id="xkE-Rt-kmf"/>
                     <constraint firstItem="fdH-CM-5hW" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="zZX-Y2-8zk"/>
                 </constraints>
@@ -81,7 +73,6 @@
                 <outlet property="huangpaiLabel" destination="8pM-ir-Hn8" id="AvN-bL-HyQ"/>
                 <outlet property="numberCountLabel" destination="K3T-2u-M2p" id="A4U-pG-xv8"/>
                 <outlet property="numberLabel" destination="fdH-CM-5hW" id="OAG-SD-JiG"/>
-                <outlet property="playerLabel" destination="Fg7-UG-FZV" id="VdB-tg-iX2"/>
                 <outlet property="teamLabel" destination="TSq-QL-vMb" id="TeQ-gu-g4E"/>
             </connections>
         </tableViewCell>

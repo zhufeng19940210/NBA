@@ -37,35 +37,16 @@ static NSString *const  homeNbaCellIdentity = @"HomeNbaCellIdentity";
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor whiteColor];
-    //请求数据了
-    [self setupRefreshData];
     //创建tableView
     [self setupTableView];
 }
--(void)setupRefreshData{
-    [MBProgressHUD showHUDAddedTo:self.view animated:YES];
-    [self.normalArray removeAllObjects];
-    [self.liveArray removeAllObjects];
-    [[ZFNetWorkCacheTool ShareWorkTool]GETWithUrl:ZF_HOME_NBA_URL parameter:nil success:^(id responseObject) {
-        [MBProgressHUD hideHUDForView:self.view animated:YES];
-        NSLog(@"responseObject:%@",responseObject);
-        NSArray *norarray = responseObject[@"result"][@"list"][1][@"tr"];
-        NSArray *livearray = responseObject[@"result"][@"list"][1][@"live"];
-        for (NSDictionary *dict in norarray) {
-            ZFHomeModel *model = [ZFHomeModel yy_modelWithJSON:dict];
-            [self.normalArray addObject:model];
-        }
-        for (NSDictionary *dict in livearray) {
-            ZFLiveModel *liveModel = [ZFLiveModel yy_modelWithJSON:dict];
-            [self.liveArray addObject:liveModel];
-        }
-        //刷新界面
-        [self.homeNbaTableView reloadData];
-        [self.headView setModel:self.liveArray[0]];
-    } failure:^(NSString *error) {
-        [MBProgressHUD hideHUDForView:self.view animated:YES];
-    }];
+-(void)setDataArray:(NSMutableArray *)dataArray{
+    [self.normalArray addObjectsFromArray:dataArray];
 }
+-(void)setLiveArray2:(NSMutableArray *)liveArray2{
+    [self.liveArray addObjectsFromArray:liveArray2];
+}
+
 -(void)setupTableView{
     self.homeNbaTableView.delegate = self;
     self.homeNbaTableView.dataSource = self;

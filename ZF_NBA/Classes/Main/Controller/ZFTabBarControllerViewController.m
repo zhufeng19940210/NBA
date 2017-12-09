@@ -16,11 +16,11 @@
 +(void)initialize{
     [super initialize];
     NSMutableDictionary *attrs = [NSMutableDictionary dictionary];
-    attrs[NSFontAttributeName] = [UIFont systemFontOfSize:10];
+    attrs[NSFontAttributeName] = [UIFont systemFontOfSize:12];
     attrs[NSForegroundColorAttributeName] =  [UIColor colorWithRed:(122.0f/255.0f) green:(126.0f/255.0) blue:(131.0f/255.0f) alpha:1 ];
     NSMutableDictionary *selectAttrs = [NSMutableDictionary dictionary];
-    selectAttrs[NSFontAttributeName] = [UIFont systemFontOfSize:10];
-    selectAttrs[NSForegroundColorAttributeName] = [UIColor colorWithRed:(255.0f/255.0f) green:(126.0f/255.0) blue:(0.0f/255.0f) alpha:1];
+    selectAttrs[NSFontAttributeName] = [UIFont systemFontOfSize:12];
+    selectAttrs[NSForegroundColorAttributeName] = [UIColor redColor];
     UITabBarItem *item = [UITabBarItem appearance];
     [item setTitleTextAttributes:attrs forState:UIControlStateNormal];
     [item setTitleTextAttributes:selectAttrs forState:UIControlStateSelected];
@@ -46,11 +46,11 @@
     [self setupAllControllers];
 }
 -(void)setupAllControllers{
-//    ZFHomeViewController *homeVc = [[ZFHomeViewController alloc]init];
-//    [self setupChildViewVC:homeVc title:@"今日比赛" norImage:@"" selectImage:@""];
+    ZFHomeViewController *homeVc = [[ZFHomeViewController alloc]init];
+    [self setupChildViewVC:homeVc title:@"篮球" norImage:@"home" selectImage:@"home2"];
     ZFGameViewController *gameVc = [[ZFGameViewController alloc]init];
-    [self setupChildViewVC:gameVc title:@"全部赛程" norImage:@"" selectImage:@""];
+    [self setupChildViewVC:gameVc title:@"球类" norImage:@"message" selectImage:@"message2"];
     ZFSettingViewController *settingVc = [[ZFSettingViewController alloc]init];
-    [self setupChildViewVC:settingVc title:@"我的设置" norImage:@"" selectImage:@""];
+    [self setupChildViewVC:settingVc title:@"其他" norImage:@"more" selectImage:@"more2"];
 }
 @end

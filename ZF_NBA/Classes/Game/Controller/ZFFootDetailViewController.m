@@ -72,6 +72,7 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.title = self.model.name;
     [self setupData];
 }
 -(void)setupData{
@@ -132,7 +133,6 @@
     _pageTitleView.selectedIndex = 0;
     _pageTitleView.isNeedBounces = NO;
     [self.view addSubview:_pageTitleView];
-    NSLog(@"self.game1Array:%lu,self.game2Array:%d,self.game4Array:%d",(unsigned long)self.game1Array.count,self.game2Array.count,self.game4Array.count);
     self.foot1Vc.dataArray = self.game1Array;
     self.foot2Vc.dataArray = self.game2Array;
     self.foot4vc.dataArray = self.game4Array;
@@ -148,12 +148,10 @@
 - (void)pageTitleView:(SGPageTitleView *)pageTitleView selectedIndex:(NSInteger)selectedIndex {
     [self.pageContentView setPageCententViewCurrentIndex:selectedIndex];
 }
+
 #pragma mark SGPageTitleViewDelegate
 - (void)pageContentView:(SGPageContentView *)pageContentView progress:(CGFloat)progress originalIndex:(NSInteger)originalIndex targetIndex:(NSInteger)targetIndex {
     [self.pageTitleView setPageTitleViewWithProgress:progress originalIndex:originalIndex targetIndex:targetIndex];
 }
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+
 @end

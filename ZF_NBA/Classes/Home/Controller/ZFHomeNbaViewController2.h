@@ -7,7 +7,6 @@
 //
 
 #import <UIKit/UIKit.h>
-
 @interface ZFHomeNbaViewController2 : UIViewController
-
+@property (nonatomic,strong)NSMutableArray *dataArray;
 @end
