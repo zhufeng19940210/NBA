@@ -12,6 +12,14 @@
 		BF3A9CB91FD9F274000987F3 /* ZFFootSubTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF3A9CB71FD9F274000987F3 /* ZFFootSubTableViewCell.xib */; };
 		BF3A9CBD1FD9FEB3000987F3 /* ZFFootsubTableViewCell4.m in Sources */ = {isa = PBXBuildFile; fileRef = BF3A9CBB1FD9FEB3000987F3 /* ZFFootsubTableViewCell4.m */; };
 		BF3A9CBE1FD9FEB3000987F3 /* ZFFootsubTableViewCell4.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF3A9CBC1FD9FEB3000987F3 /* ZFFootsubTableViewCell4.xib */; };
+		BFA6A4C71FDC533300EA4651 /* ZFPlyerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA6A4C61FDC533300EA4651 /* ZFPlyerViewController.m */; };
+		BFA6A4CA1FDC569700EA4651 /* ZFSettingTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA6A4C91FDC569700EA4651 /* ZFSettingTableViewCell.m */; };
+		BFA6A4CD1FDC6DF500EA4651 /* ZFPlayerDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA6A4CC1FDC6DF500EA4651 /* ZFPlayerDetailViewController.m */; };
+		BFA6A4D21FDC6E7300EA4651 /* FootPlayer.json in Resources */ = {isa = PBXBuildFile; fileRef = BFA6A4D01FDC6E7300EA4651 /* FootPlayer.json */; };
+		BFA6A4D31FDC6E7300EA4651 /* NbaPlayer.json in Resources */ = {isa = PBXBuildFile; fileRef = BFA6A4D11FDC6E7300EA4651 /* NbaPlayer.json */; };
+		BFA6A4D81FDC8F7D00EA4651 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BFA6A4D71FDC8F7600EA4651 /* CoreGraphics.framework */; };
+		BFA6A4DB1FDC9D8600EA4651 /* ZFPlayerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA6A4DA1FDC9D8600EA4651 /* ZFPlayerModel.m */; };
+		BFA6A4DE1FDCC75800EA4651 /* BTSpiderPlotterView.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA6A4DC1FDCC75700EA4651 /* BTSpiderPlotterView.m */; };
 		BFA880E51FD8639A004B4F57 /* ZFVideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA880E31FD8639A004B4F57 /* ZFVideoViewController.m */; };
 		BFA880E61FD8639A004B4F57 /* ZFVideoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFA880E41FD8639A004B4F57 /* ZFVideoViewController.xib */; };
 		BFA880EE1FD868BD004B4F57 /* ZFTeamModel.m in Sources */ = {isa = PBXBuildFile; fileRef = BFA880ED1FD868BD004B4F57 /* ZFTeamModel.m */; };
@@ -87,6 +95,19 @@
 		BF3A9CBA1FD9FEB3000987F3 /* ZFFootsubTableViewCell4.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFFootsubTableViewCell4.h; sourceTree = "<group>"; };
 		BF3A9CBB1FD9FEB3000987F3 /* ZFFootsubTableViewCell4.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFFootsubTableViewCell4.m; sourceTree = "<group>"; };
 		BF3A9CBC1FD9FEB3000987F3 /* ZFFootsubTableViewCell4.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZFFootsubTableViewCell4.xib; sourceTree = "<group>"; };
+		BFA6A4C51FDC533300EA4651 /* ZFPlyerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFPlyerViewController.h; sourceTree = "<group>"; };
+		BFA6A4C61FDC533300EA4651 /* ZFPlyerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFPlyerViewController.m; sourceTree = "<group>"; };
+		BFA6A4C81FDC569700EA4651 /* ZFSettingTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFSettingTableViewCell.h; sourceTree = "<group>"; };
+		BFA6A4C91FDC569700EA4651 /* ZFSettingTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFSettingTableViewCell.m; sourceTree = "<group>"; };
+		BFA6A4CB1FDC6DF500EA4651 /* ZFPlayerDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFPlayerDetailViewController.h; sourceTree = "<group>"; };
+		BFA6A4CC1FDC6DF500EA4651 /* ZFPlayerDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFPlayerDetailViewController.m; sourceTree = "<group>"; };
+		BFA6A4D01FDC6E7300EA4651 /* FootPlayer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = FootPlayer.json; sourceTree = "<group>"; };
+		BFA6A4D11FDC6E7300EA4651 /* NbaPlayer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = NbaPlayer.json; sourceTree = "<group>"; };
+		BFA6A4D71FDC8F7600EA4651 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		BFA6A4D91FDC9D8600EA4651 /* ZFPlayerModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFPlayerModel.h; sourceTree = "<group>"; };
+		BFA6A4DA1FDC9D8600EA4651 /* ZFPlayerModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFPlayerModel.m; sourceTree = "<group>"; };
+		BFA6A4DC1FDCC75700EA4651 /* BTSpiderPlotterView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BTSpiderPlotterView.m; sourceTree = "<group>"; };
+		BFA6A4DD1FDCC75700EA4651 /* BTSpiderPlotterView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BTSpiderPlotterView.h; sourceTree = "<group>"; };
 		BFA880E21FD8639A004B4F57 /* ZFVideoViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFVideoViewController.h; sourceTree = "<group>"; };
 		BFA880E31FD8639A004B4F57 /* ZFVideoViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFVideoViewController.m; sourceTree = "<group>"; };
 		BFA880E41FD8639A004B4F57 /* ZFVideoViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ZFVideoViewController.xib; sourceTree = "<group>"; };
@@ -203,6 +224,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFA6A4D81FDC8F7D00EA4651 /* CoreGraphics.framework in Frameworks */,
 				50EC09AE52FF8A87BC725D50 /* libPods-ZF_NBA.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -462,6 +484,8 @@
 		BFD6C9DC1FD5CB7A0056CC20 /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				BFA6A4D01FDC6E7300EA4651 /* FootPlayer.json */,
+				BFA6A4D11FDC6E7300EA4651 /* NbaPlayer.json */,
 				BFA881031FD87EEC004B4F57 /* foot.json */,
 				BFA881011FD87AE4004B4F57 /* Team_Logo.json */,
 				BFB51CCC1FD7765300A953B4 /* SGPageContentScrollView.h */,
@@ -492,6 +516,8 @@
 		BFD6C9FE1FD5CDDA0056CC20 /* Setting */ = {
 			isa = PBXGroup;
 			children = (
+				BFA6A4DD1FDCC75700EA4651 /* BTSpiderPlotterView.h */,
+				BFA6A4DC1FDCC75700EA4651 /* BTSpiderPlotterView.m */,
 				BFD6C9FF1FD5CDDA0056CC20 /* Controller */,
 				BFD6CA001FD5CDDA0056CC20 /* Model */,
 				BFD6CA011FD5CDDA0056CC20 /* View */,
@@ -504,6 +530,10 @@
 			children = (
 				BFD6CA021FD5CE620056CC20 /* ZFSettingViewController.h */,
 				BFD6CA031FD5CE620056CC20 /* ZFSettingViewController.m */,
+				BFA6A4C51FDC533300EA4651 /* ZFPlyerViewController.h */,
+				BFA6A4C61FDC533300EA4651 /* ZFPlyerViewController.m */,
+				BFA6A4CB1FDC6DF500EA4651 /* ZFPlayerDetailViewController.h */,
+				BFA6A4CC1FDC6DF500EA4651 /* ZFPlayerDetailViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -511,6 +541,8 @@
 		BFD6CA001FD5CDDA0056CC20 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BFA6A4D91FDC9D8600EA4651 /* ZFPlayerModel.h */,
+				BFA6A4DA1FDC9D8600EA4651 /* ZFPlayerModel.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -518,6 +550,8 @@
 		BFD6CA011FD5CDDA0056CC20 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BFA6A4C81FDC569700EA4651 /* ZFSettingTableViewCell.h */,
+				BFA6A4C91FDC569700EA4651 /* ZFSettingTableViewCell.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -559,6 +593,7 @@
 		EF2A3B15DA9C80C877E0FB85 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				BFA6A4D71FDC8F7600EA4651 /* CoreGraphics.framework */,
 				E56318759BB532D543513BCD /* libPods-ZF_NBA.a */,
 			);
 			name = Frameworks;
@@ -634,9 +669,11 @@
 				BFA881001FD876FB004B4F57 /* ZFFootDetailViewController.xib in Resources */,
 				BFB51CC11FD759EB00A953B4 /* ZFHomeNbaHeaerView.xib in Resources */,
 				BFD6C9C61FD5C5CF0056CC20 /* LaunchScreen.storyboard in Resources */,
+				BFA6A4D31FDC6E7300EA4651 /* NbaPlayer.json in Resources */,
 				BFB51CE01FD78AFB00A953B4 /* ZFHomeNbaViewController2.xib in Resources */,
 				BFD6C9C31FD5C5CF0056CC20 /* Assets.xcassets in Resources */,
 				BFA881021FD87AE4004B4F57 /* Team_Logo.json in Resources */,
+				BFA6A4D21FDC6E7300EA4651 /* FootPlayer.json in Resources */,
 				BFB51CAC1FD7346700A953B4 /* ZFHomeNbaViewController.xib in Resources */,
 				BFA8812E1FD8BEC3004B4F57 /* ZFFootSubViewController4.xib in Resources */,
 				BFA881191FD8B718004B4F57 /* ZFDetailHeaderView.xib in Resources */,
@@ -713,6 +750,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFA6A4CA1FDC569700EA4651 /* ZFSettingTableViewCell.m in Sources */,
 				BFB51CDE1FD78AFB00A953B4 /* ZFHomeNbaViewController2.m in Sources */,
 				BFA880F51FD87327004B4F57 /* ZFGameNbaTableViewCell.m in Sources */,
 				BFB51CD21FD7765400A953B4 /* SGPageContentScrollView.m in Sources */,
@@ -724,11 +762,13 @@
 				BFD6C9FC1FD5CD990056CC20 /* ZFHomeViewController.m in Sources */,
 				BFA880F11FD868FF004B4F57 /* ZFAreaModel.m in Sources */,
 				BFA8810B1FD88377004B4F57 /* ZFGameFootTableViewCell.m in Sources */,
+				BFA6A4CD1FDC6DF500EA4651 /* ZFPlayerDetailViewController.m in Sources */,
 				BFD6CA041FD5CE620056CC20 /* ZFSettingViewController.m in Sources */,
 				BFA8812D1FD8BEC3004B4F57 /* ZFFootSubViewController4.m in Sources */,
 				BFA8811E1FD8BE76004B4F57 /* ZFFootSubViewController1.m in Sources */,
 				BFB51CBB1FD759B300A953B4 /* ZFHomeNbaCell.m in Sources */,
 				BF3A9CBD1FD9FEB3000987F3 /* ZFFootsubTableViewCell4.m in Sources */,
+				BFA6A4DB1FDC9D8600EA4651 /* ZFPlayerModel.m in Sources */,
 				BFD6CA0C1FD5CFAF0056CC20 /* ZFWelcomeViewController.m in Sources */,
 				BFB51CAB1FD7346700A953B4 /* ZFHomeNbaViewController.m in Sources */,
 				BF3A9CB81FD9F274000987F3 /* ZFFootSubTableViewCell.m in Sources */,
@@ -743,7 +783,9 @@
 				BFD6C9ED1FD5CD1B0056CC20 /* ZFNbaViewController.m in Sources */,
 				BFB51CC71FD7631500A953B4 /* ZFLiveModel.m in Sources */,
 				BFD6C9F71FD5CD8A0056CC20 /* ZFGameViewController.m in Sources */,
+				BFA6A4DE1FDCC75800EA4651 /* BTSpiderPlotterView.m in Sources */,
 				BFA881231FD8BE91004B4F57 /* ZFFootSubViewController2.m in Sources */,
+				BFA6A4C71FDC533300EA4651 /* ZFPlyerViewController.m in Sources */,
 				BFD6C9F21FD5CD6E0056CC20 /* ZFFootViewController.m in Sources */,
 				BFD6C9E11FD5CC960056CC20 /* ZFTabBarControllerViewController.m in Sources */,
 				BFA880EE1FD868BD004B4F57 /* ZFTeamModel.m in Sources */,

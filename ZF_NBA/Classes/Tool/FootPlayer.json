@@ -1,0 +1,64 @@
+{
+    "result":[
+              //@"C罗",@"梅西",@"内马尔",@"苏亚雷斯",@"贝尔"
+              /*[valueArray addObject: [dictionary valueForKey:@"速度"]];
+              [valueArray addObject: [dictionary valueForKey:@"创造力"]];
+              [valueArray addObject: [dictionary valueForKey:@"进攻"]];
+              [valueArray addObject: [dictionary valueForKey:@"技术"]];
+              [valueArray addObject: [dictionary valueForKey:@"制空"]];
+              [valueArray addObject: [dictionary valueForKey:@"精神"]];
+              [valueArray addObject: [dictionary valueForKey:@"防守"]];
+              [valueArray addObject: [dictionary valueForKey:@"身体"]];
+               &*/
+        {
+              "name"    :"C罗纳尔多",
+              "score"   : "26.3",
+              "toulan"  :"47.3%",
+              "sanfen"  :"38.1%",
+              "faqiu"   :"93.3%",
+              "zugong"  :"6.6",
+              "qianduan":"1.7",
+              "siwu"    : "2.9"
+        },
+        {
+              "name"    :"梅西",
+              "score"   : "26.3",
+              "toulan"  :"47.3%",
+              "sanfen"  :"38.1%",
+              "faqiu"   :"93.3%",
+              "zugong"  :"6.6",
+              "qianduan":"1.7",
+              "siwu"    : "2.9"
+        },
+        {
+              "name"    :"内马尔",
+              "score"   : "26.3",
+              "toulan"  :"47.3%",
+              "sanfen"  :"38.1%",
+              "faqiu"   :"93.3%",
+              "zugong"  :"6.6",
+              "qianduan":"1.7",
+              "siwu"    : "2.9"
+        },
+        {
+              "name"    :"苏亚雷斯",
+              "score"   : "26.3",
+              "toulan"  :"47.3%",
+              "sanfen"  :"38.1%",
+              "faqiu"   :"93.3%",
+              "zugong"  :"6.6",
+              "qianduan":"1.7",
+              "siwu"    : "2.9"
+        },
+        {
+              "name"    :"贝尔",
+              "score"   : "26.3",
+              "toulan"  :"47.3%",
+              "sanfen"  :"38.1%",
+              "faqiu"   :"93.3%",
+              "zugong"  :"6.6",
+              "qianduan":"1.7",
+              "siwu"    : "2.9"
+       },
+    ]
+}

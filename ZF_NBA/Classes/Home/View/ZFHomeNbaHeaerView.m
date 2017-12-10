@@ -38,10 +38,10 @@
     self.headerScoreLabel.text = model.score;
     self.timeLabel.text = model.title;
     self.rightZhankuangLabel.text = model.player2info;
-    self.rightWhoLabel.text = model.player2location;
+    self.rightWhoLabel.text = [NSString stringWithFormat:@"(%@)",model.player2location];
     self.rightNameLabel.text = model.player2;
     [self.rightImageView yy_setImageWithURL:[NSURL URLWithString:model.player2logobig] placeholder:nil];
-    self.leftWhoLabel.text = model.player1location;
+    self.leftWhoLabel.text = [NSString stringWithFormat:@"(%@)",model.player1location];
     self.leftZhankuangLabel.text = model.player1info;
     self.leftNameLabel.text = model.player1;
     [self.leftImageView yy_setImageWithURL:[NSURL URLWithString:model.player1logobig] placeholder:nil];
